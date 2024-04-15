@@ -11,6 +11,7 @@
     margin: 20px;
     font-size: 26px;
     border: 2px solid;
+    background-color: #E9ECF5;
  
 }
 
@@ -19,6 +20,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 2px 16px;
+    background-color: #CCD6EB;
 
 }
 
@@ -61,6 +63,7 @@
     position: relative;
     border: 2px solid;
     cursor: pointer;
+    background-color: #A3C3D9;
 
 }
 
