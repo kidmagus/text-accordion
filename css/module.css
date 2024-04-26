@@ -1,98 +1,88 @@
 * {
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
 }
 
-.text-accordion{
-    display: flex;
-    grid-gap: 20px;
-    padding: 20px;
-    max-width: 900px;  
-    margin: 20px;
-    font-size: 26px;
-    border: 2px solid;
-    background-color: #E9ECF5;
- 
+.text-accordion {
+  display: flex;
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px;
+  font-size: 26px;
+  border: 2px solid;
+  background-color: #e9ecf5;
+}
+
+@media screen and (max-width: 768px) {
+  .text-accordion {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 .text-accordion__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2px 16px;
-    background-color: #CCD6EB;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px 16px;
+  background-color: #ccd6eb;
 }
 
-.text__btn{
-    padding: 10px;
-    width: 90px;
-    background: none;
+.text__btn {
+  padding: 10px;
+  width: 90px;
+  background: none;
 }
-
 
 /* #6 NO ACCORDION COMPONENT -- HORIZONTALLY CENTERED TEXT COMP  */
 .text-accordion--align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-accordion--stacked {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 /* #9 and #10 for Layout */
-@media screen and (min-width:760px) {
-    .text-accordion--reverse {
-        flex-direction: row-reverse;
-    }
+@media screen and (min-width: 760px) {
+  .text-accordion--reverse {
+    flex-direction: row-reverse;
+  }
 }
 
-.text , .accordion {
-    width: 100%;
-    border: 2px solid;
+.text,
+.accordion {
+  width: 100%;
+  border: 2px solid;
 }
 
 .accordion__box {
-    padding: 5px;
-    margin: 8px;
+  padding: 5px;
+  margin: 8px;
 }
 
 .box__info {
-    display: flex;
-    padding-left:10px;
-    position: relative;
-    border: 2px solid;
-    cursor: pointer;
-    background-color: #A3C3D9;
-
-}
-
-.box__span {
-    position: absolute;
-    margin: 20px;
-    right:0;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  column-gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid;
+  cursor: pointer;
+  background-color: #a3c3d9;
+  word-break: break-word;
 }
 
 .accordion__content {
-    display: none;
+  display: none;
 }
-
 
 /* active styles  */
-.active .accordion__content{
-    display: block;
+.active .accordion__content {
+  display: block;
 }
 
-
 .active .box__span {
-    transform: rotate(45deg);
-  }
-
-
-
-
-
-
-
-
-
+  transform: rotate(45deg);
+}
