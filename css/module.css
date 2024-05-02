@@ -74,15 +74,15 @@
   word-break: break-word;
 }
 
-.accordion__content {
+.box__content {
   display: none;
 }
 
 /* active styles  */
-.active .accordion__content {
+.box.active .box__content {
   display: block;
 }
 
-.active .box__span {
+.box.active .box__span {
   transform: rotate(45deg);
 }
