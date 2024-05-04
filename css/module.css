@@ -28,6 +28,12 @@
   background-color: #ccd6eb;
 }
 
+.text h2 {
+  width: 100%;
+  word-break: break-word;
+}
+
+
 .text__btn {
   padding: 10px;
   width: 90px;
